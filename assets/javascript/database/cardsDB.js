@@ -207,4 +207,94 @@ export const dataCards = [
         description: 'Descrição do produto',
         price: 99.00
     },
+    {
+        id: 25,
+        title: 'Produto 25',
+        src: './assets/images/mesa/25.jpeg',
+        alt: 'produto 25',
+        category: 'mesa',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 26,
+        title: 'Produto 26',
+        src: './assets/images/armario/26.jpeg',
+        alt: 'produto 26',
+        category: 'armario',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 27,
+        title: 'Produto 27',
+        src: './assets/images/armario/27.jpeg',
+        alt: 'produto 27',
+        category: 'armario',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 28,
+        title: 'Produto 28',
+        src: './assets/images/armario/28.jpeg',
+        alt: 'produto 28',
+        category: 'armario',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 29,
+        title: 'Produto 29',
+        src: './assets/images/mesa/29.jpeg',
+        alt: 'produto 29',
+        category: 'mesa',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 30,
+        title: 'Produto 30',
+        src: './assets/images/mesa/30.jpeg',
+        alt: 'produto 30',
+        category: 'mesa',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 31,
+        title: 'Produto 31',
+        src: './assets/images/armario/31.jpeg',
+        alt: 'produto 31',
+        category: 'armario',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 32,
+        title: 'Produto 32',
+        src: './assets/images/cadeira/32.jpeg',
+        alt: 'produto 32',
+        category: 'cadeira',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 33,
+        title: 'Produto 33',
+        src: './assets/images/mesa/33.jpeg',
+        alt: 'produto 33',
+        category: 'mesa',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
+    {
+        id: 34,
+        title: 'Produto 34',
+        src: './assets/images/armario/34.jpeg',
+        alt: 'produto 34',
+        category: 'armario',
+        description: 'Descrição do produto',
+        price: 99.00
+    },
 ];

@@ -7,6 +7,7 @@ const renderImages = () => {
         (product) => {
             const element_card = document.createElement('div');
 
+            element_card.classList.add('c-card');
             element_card.setAttribute('data-cards', '');
             element_card.setAttribute('data-category', product.category);
             element_card.setAttribute('data-id', product.id);

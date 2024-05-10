@@ -7,14 +7,16 @@
     padding: 0;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-     box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .c-main-container {
-    max-width: 1068px;
-    margin: auto;
-    width: 100%;
-    padding: 2rem;
+    overflow: hidden;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .c-main-container h1 {
@@ -37,19 +39,26 @@
     padding: 4px 10px;
     border-radius: 4px;
     transition: 0.4s;
-    background: #0000002e;
+    background: #00000007;
 }
 
 .filter_item:hover {
     background: rgba(0, 0, 0, 0.086);
-
 }
 
 .c-post {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+}
+
+.c-card {
+    flex: 1 1 150px;
+    margin: 5px;
+    text-align: center;
 }
 
 .c-post-img {
@@ -59,8 +68,4 @@
     object-position: center;
     border-radius: 0.5rem;
     margin-top: 1rem;
-}
-
-.c-hidden {
-    display: none;
 }
