@@ -54,10 +54,6 @@ window.addEventListener('click',
                 );
                 break;
 
-            case 'sofa_category':
-                showCategory(allCards, 'sofa');
-                break;
-
             case 'mesa_category':
                 showCategory(allCards, 'mesa');
                 break;
