@@ -19,7 +19,7 @@ const renderImages = () => {
             <p>
                R$<span>${product.price}</span>
             </p>
-            <p>${product.description}</p>
+            <button>${product.description}</button>
         `;
 
             container_all_cards.appendChild(element_card);

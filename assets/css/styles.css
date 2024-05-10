@@ -19,18 +19,28 @@
     flex-direction: column;
 }
 
+.c-main-container > div {
+    background-color: white;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    width: 90%;
+    border-bottom: 1px solid rgba(19, 18, 18, 0.091);
+    box-shadow: 5px 10px 18px #8888880b;
+}
+
 .c-main-container h1 {
     text-align: center;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.post_filter {
+.c-post-filter {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.2rem;
     margin-bottom: 2rem;
-
     flex-direction: column;
 }
 
@@ -55,6 +65,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 18rem;
 }
 
 .c-card {
@@ -66,8 +77,9 @@
 .c-post-img {
     width: 300px;
     height: 300px;
-    object-fit: cover;
+    /* object-fit: cover; */
     object-position: center;
     border-radius: 0.5rem;
     margin-top: 1rem;
 }
+
