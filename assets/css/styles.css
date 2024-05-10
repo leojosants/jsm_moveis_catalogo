@@ -28,8 +28,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 1.2rem;
+    gap: 1.2rem;
     margin-bottom: 2rem;
+
+    flex-direction: column;
 }
 
 .filter_item {

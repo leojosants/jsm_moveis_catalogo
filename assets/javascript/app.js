@@ -14,7 +14,7 @@ const renderImages = () => {
 
             element_card.innerHTML = `
             <img class="c-post-img" src="${product.src}" alt="${product.alt}"/>
-            <h2>${product.title}</h2>
+            <h3>${product.title}</h3>
             <p>ref: ${product.id}</p>
             <p>
                R$<span>${product.price}</span>
