@@ -21,7 +21,6 @@
 
 .c-main-container > div {
     background-color: white;
-    padding: 1rem;
     position: fixed;
     top: 0;
     width: 90%;
@@ -31,7 +30,7 @@
 
 .c-main-container h1 {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -75,9 +74,9 @@
 }
 
 .c-post-img {
-    width: 300px;
-    height: 300px;
-    /* object-fit: cover; */
+    width: 350px;
+    /* height: 350px; */
+    object-fit: cover;
     object-position: center;
     border-radius: 0.5rem;
     margin-top: 1rem;

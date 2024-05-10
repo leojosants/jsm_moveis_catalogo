@@ -387,4 +387,49 @@ export const dataCards = [
         description: 'Descrição',
         price: 99.00
     },
+    {
+        id: 45,
+        title: 'Produto 45',
+        src: './assets/images/mesa/45.jpeg',
+        alt: 'produto 45',
+        category: 'mesa',
+        description: 'Descrição',
+        price: 99.00
+    },
+    {
+        id: 46,
+        title: 'Produto 46',
+        src: './assets/images/mesa/46.jpeg',
+        alt: 'produto 46',
+        category: 'mesa',
+        description: 'Descrição',
+        price: 99.00
+    },
+    {
+        id: 47,
+        title: 'Produto 47',
+        src: './assets/images/mesa/47.jpeg',
+        alt: 'produto 47',
+        category: 'mesa',
+        description: 'Descrição',
+        price: 99.00
+    },
+    {
+        id: 48,
+        title: 'Produto 48',
+        src: './assets/images/banco/48.jpeg',
+        alt: 'produto 48',
+        category: 'banco',
+        description: 'Descrição',
+        price: 99.00
+    },
+    {
+        id: 49,
+        title: 'Produto 49',
+        src: './assets/images/armario/49.jpeg',
+        alt: 'produto 49',
+        category: 'armario',
+        description: 'Descrição',
+        price: 99.00
+    },
 ];
