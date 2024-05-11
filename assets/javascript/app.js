@@ -21,10 +21,11 @@ const renderImages = () => {
                 ${product.title}
             </h3>
             
-            <div style="display: flex; align-items: center; justify-content: space-around;">
-                <span>
-                    ref: ${product.id}
-                </span> 
+            <span>
+                ref: ${product.id}
+            </span> 
+
+            <div class="c-card-info">
                 
                 <span>
                     R$${product.price}
