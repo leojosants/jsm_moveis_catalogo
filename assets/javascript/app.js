@@ -13,13 +13,27 @@ const renderImages = () => {
             element_card.setAttribute('data-id', product.id);
 
             element_card.innerHTML = `
-            <img class="c-post-img" src="${product.src}" alt="${product.alt}"/>
-            <h3>${product.title}</h3>
-            <p>ref: ${product.id}</p>
-            <p>
-               R$<span>${product.price}</span>
-            </p>
-            <button>${product.description}</button>
+            <div>
+                <img class="c-post-img" src="${product.src}" alt="${product.alt}"/>
+            </div>
+
+            <h3 style="margin-bottom: 1rem">
+                ${product.title}
+            </h3>
+            
+            <div style="display: flex; align-items: center; justify-content: space-around;">
+                <span>
+                    ref: ${product.id}
+                </span> 
+                
+                <span>
+                    R$${product.price}
+                </span>
+                
+                <button>
+                    ${product.description}
+                </button>
+            </div>
         `;
 
             container_all_cards.appendChild(element_card);

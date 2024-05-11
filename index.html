@@ -4,7 +4,11 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>JSM Móveis - Catálogo</title>
-		<link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.svg"
+			type="image/x-icon"
+		/>
 		<link rel="stylesheet" href="./assets/css/styles.css" />
 		<script type="module" src="./assets/javascript/app.js" defer></script>
 	</head>
@@ -13,14 +17,22 @@
 			<div>
 				<h1>JSM Móveis</h1>
 
-				<!-- implemetar -->
-				<!-- <form>
-                <label for="search">
-                    <input type="search">
-                </label>
-            	</form> -->
+				<div class="c-search">
+					<label>
+						<input type="search" placeholder="Buscar produto..." />
+					</label>
 
-				<div class="c-post-filter">
+					<select>
+						<option>Categorias</option>
+						<option value="all_categories">Todas</option>
+						<option value="mesa_category">Mesa</option>
+						<option value="cadeira_category">Cadeira</option>
+						<option value="banco_category">Banco</option>
+						<option value="armario_category">Armário</option>
+					</select>
+				</div>
+
+				<!-- <div class="c-post-filter">
 					<div
 						style="
 							display: flex;
@@ -62,7 +74,7 @@
 							>Mesa/Cadeira</span
 						>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 			<!-- Posts -->
