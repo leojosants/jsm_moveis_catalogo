@@ -19,11 +19,15 @@
 
 				<div class="c-search">
 					<label>
-						<input type="search" placeholder="Buscar produto..." data-input-search/>
+						<input
+							type="search"
+							placeholder="Buscar produto..."
+							data-input-search
+						/>
 					</label>
 
 					<select data-select>
-						<option selected>Categorias</option>
+						<option disabled selected>Categorias</option>
 						<option value="all_categories">Todas</option>
 						<option value="mesa_category">Mesa</option>
 						<option value="cadeira_category">Cadeira</option>
@@ -31,109 +35,24 @@
 						<option value="armario_category">Armário</option>
 					</select>
 				</div>
-
-				<!-- <div class="c-post-filter">
-					<div
-						style="
-							display: flex;
-							align-items: center;
-							justify-content: space-around;
-							gap: 2rem;
-						"
-					>
-						<span
-							class="filter_item filter_item--active"
-							data-filter="all_categories"
-						>
-							Todas</span
-						>
-						<span class="filter_item" data-filter="mesa_category"
-							>Mesa</span
-						>
-						<span class="filter_item" data-filter="cadeira_category"
-							>Cadeira</span
-						>
-					</div>
-					<div
-						style="
-							display: flex;
-							align-items: center;
-							justify-content: space-around;
-							gap: 2rem;
-						"
-					>
-						<span class="filter_item" data-filter="banco_category"
-							>Banco</span
-						>
-						<span class="filter_item" data-filter="armario_category"
-							>Armário</span
-						>
-						<span
-							class="filter_item"
-							data-filter="mesa_com_cadeira_category"
-							>Mesa/Cadeira</span
-						>
-					</div>
-				</div> -->
 			</div>
 
 			<!-- Posts -->
-			<section class="c-post" data-container-all-cards>
-				<!-- <div data_category="sofa" data_cards data_id="1">
-					<img
-						src="./assets/images/01.jpeg"
-						alt="${product.alt}"
-						class="c-post-img"
-					/>
-					<h2>Produto 1</h2>
-					<p>R$<span>00,00</span></p>
-					<p>Descrição</p>
-				</div>
+			<section class="c-post" data-container-all-cards></section>
 
-				<div data_category="mesa" data_cards data_id="2">
-					<img
-						src="./assets/images/02.jpeg"
-						alt="${product.alt}"
-						class="c-post-img"
-					/>
-					<h2>Produto 2</h2>
-					<p>R$<span>00,00</span></p>
-					<p>Descrição</p>
-				</div>
+			<div id="id-popup" data-popup-container>
+				<div class="c-popup-content">
+					<h2>Descrição</h2>
+					<p>ref: <span data-ref>00</span></p>
+					<p>preço: R$<span data-price>0,00</span></p>
+					<p>Largura: <span data-width>0</span>cm</p>
+					<p>Altura: <span data-height>0</span>cm</p>
 
-				<div data_category="cama" data_cards data_id="3">
-					<img
-						src="./assets/images/03.jpeg"
-						alt="${product.alt}"
-						class="c-post-img"
-					/>
-					<h2>Produto 3</h2>
-					<p>R$<span>00,00</span></p>
-					<p>Descrição</p>
+					<div class="c-popup-button">
+						<button data-button-close-description>Fechar</button>
+					</div>
 				</div>
-
-				<div data_category="guarda_roupa" data_cards data_id="4">
-					<img
-						src="./assets/images/04.jpeg"
-						alt="${product.alt}"
-						class="c-post-img"
-					/>
-					<h2>Produto 4</h2>
-					<p>R$<span>00,00</span></p>
-					<p>Descrição</p>
-				</div>
-
-				<div data_category="cadeira" data_cards data_id="5">
-					<img
-						src="./assets/images/05.jpeg"
-						alt="${product.alt}"
-						class="c-post-img"
-					/>
-					<h2>Produto 5</h2>
-					<p>R$<span>00,00</span></p>
-					<p>Descrição</p>
-				</div> -->
-			</section>
+			</div>
 		</div>
 	</body>
 </html>

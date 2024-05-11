@@ -1,11 +1,13 @@
-import { dataCards } from './database/cardsDB.js';
+import { dataCards as dataCardsDB } from './database/cardsDB.js';
 
 const containerAllCards = document.querySelector('[data-container-all-cards]');
 const inputSearch = document.querySelector('[data-input-search]');
 const select = document.querySelector('[data-select]');
+const popup = document.querySelector('[data-popup-container]');
+const buttonCloseDescription = document.querySelector('[data-button-close-description]');
 
 const renderImages = () => {
-    dataCards.map(
+    dataCardsDB.map(
         (product) => {
             const element_card = document.createElement('div');
 
@@ -25,7 +27,7 @@ const renderImages = () => {
 
             <div class="c-card-info">
                 <span>R$${product.price}</span>
-                <button>${product.description}</button>
+                <button data-button="open-description">${product.description}</button>
             </div>
             `;
 
@@ -68,10 +70,9 @@ inputSearch.addEventListener('input',
     }
 );
 
-
-
 select.addEventListener('change',
     (event) => {
+        inputSearch.value = '';
         const eventTarget = event.target;
         const filteredCategory = (eventTarget.value);
         const allCards = document.querySelectorAll('[data-cards]');
@@ -115,53 +116,50 @@ select.addEventListener('change',
     }
 );
 
+buttonCloseDescription.addEventListener('click',
+    () => {
+        popup.style.display = 'none';
+    }
+);
 
+window.addEventListener('click',
+    (event) => {
+        const eventTarget = event.target;
+        const buttonOpenDescription = (eventTarget.dataset.button === 'open-description');
+        let parent = null;
 
+        if (buttonOpenDescription) {
+            parent = eventTarget.parentElement.parentElement;
+            console.log(parent.dataset.id);
+        }
 
-// window.addEventListener('click',
-//     (event) => {
-//         const eventTarget = event.target;
-//         const filteredCategory = eventTarget.dataset.filter;
-//         const allCards = document.querySelectorAll('[data-cards]');
+        //     if (eventTarget.dataset.button === 'open-description') {
+        //         popup.style.display = 'block';
+        //         let ref = document.querySelector('[data-ref]');
+        //         let price = document.querySelector('[data-price]').innerText;
+        //         let width = document.querySelector('[data-width]').innerText;
+        //         let height = document.querySelector('[data-height]').innerText;
+        //         const cards = document.querySelectorAll('[data-cards');
+        //         let index = null;
 
-//         switch (filteredCategory) {
-//             case 'all_categories':
-//                 allCards.forEach(
-//                     (data) => {
-//                         data.style.display = 'block';
-//                     }
-//                 );
-//                 break;
+        //         cards.forEach(
+        //             (card, indice) => {
+        //                 index = indice + 1;
 
-//             case 'mesa_category':
-//                 showCategory(allCards, 'mesa');
-//                 break;
+        //                 dataCardsDB.forEach(
+        //                     (data) => {
+        //                         if (data.id === index) {
+        //                             ref.innerText = data.id;
+        //                        }
+        //                     }
+        //                 );
+        //             }
+        //         );
 
-//             case 'cadeira_category':
-//                 showCategory(allCards, 'cadeira');
-//                 break;
-
-//             case 'cama_category':
-//                 showCategory(allCards, 'cama');
-//                 break;
-
-//             case 'armario_category':
-//                 showCategory(allCards, 'armario');
-//                 break;
-
-//             case 'banco_category':
-//                 showCategory(allCards, 'banco');
-//                 break;
-
-//             case 'mesa_com_cadeira_category':
-//                 showCategory(allCards, 'mesa_com_cadeira');
-//                 break;
-
-//             default:
-//                 break;
-//         }
-//     }
-// );
+        //         // console.log(index)
+        //     }
+    }
+);
 
 window.addEventListener('DOMContentLoaded',
     () => {
