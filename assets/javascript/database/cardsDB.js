@@ -2,7 +2,9 @@ export const dataCards = [
     {
         id: 1,
         title: 'Produto 01',
-        src: './assets/images/banco/01.jpeg',
+        // src: './assets/images/banco/01.jpeg',
+        src: './assets/images/banco/01.bmp',
+        src: './assets/images/banco/01_sem_fundo.png',
         alt: 'Produto 1',
         category: 'banco',
         description: 'Descrição',
@@ -11,62 +13,66 @@ export const dataCards = [
     {
         id: 2,
         title: 'Produto 02',
-        src: './assets/images/cadeira/02.jpeg',
+        // src: './assets/images/cadeira/02.jpeg',
+        // src: './assets/images/cadeira/02.png',
+        src: './assets/images/cadeira/02_sem_fundo.png',
         alt: 'produto 2',
         category: 'cadeira',
         description: 'Descrição',
         price: 99.00
     },
-    {
-        id: 3,
-        title: 'Produto 03',
-        src: './assets/images/banco/03.jpeg',
-        alt: 'produto 3',
-        category: 'banco',
-        description: 'Descrição',
-        price: 99.00
-    },
-    {
-        id: 4,
-        title: 'Produto 04',
-        src: '../assets/images/04.jpeg',
-        src: './assets/images/banco/04.jpeg',
-        alt: 'produto 4',
-        category: 'banco',
-        description: 'Descrição',
-        price: 99.00
-    },
-    {
-        id: 5,
-        title: 'Produto 05',
-        src: './assets/images/armario/05.jpeg',
-        alt: 'produto 5',
-        category: 'armario',
-        description: 'Descrição',
-        price: 99.00
-    },
+    // {
+    //     id: 3,
+    //     title: 'Produto 03',
+    //     src: './assets/images/banco/03.jpeg',
+    //     alt: 'produto 3',
+    //     category: 'banco',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
+    // {
+    //     id: 4,
+    //     title: 'Produto 04',
+    //     src: '../assets/images/04.jpeg',
+    //     src: './assets/images/banco/04.jpeg',
+    //     alt: 'produto 4',
+    //     category: 'banco',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
+    // {
+    //     id: 5,
+    //     title: 'Produto 05',
+    //     src: './assets/images/armario/05.jpeg',
+    //     alt: 'produto 5',
+    //     category: 'armario',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
     {
         id: 6,
         title: 'Produto 06',
-        src: './assets/images/mesa/06.jpeg',
+        src: './assets/images/mesa/06.png',
+        src: './assets/images/mesa/06_sem_fundo.png',
         alt: 'produto 6',
         category: 'mesa',
         description: 'Descrição',
         price: 99.00
     },
-    {
-        id: 7,
-        title: 'Produto 07',
-        src: './assets/images/banco/07.jpeg',
-        alt: 'produto 7',
-        category: 'banco',
-        description: 'Descrição',
-        price: 99.00
-    },
+    // {
+    //     id: 7,
+    //     title: 'Produto 07',
+    //     src: './assets/images/banco/07.jpeg',
+    //     alt: 'produto 7',
+    //     category: 'banco',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
     {
         id: 8,
         title: 'Produto 08',
-        src: './assets/images/armario/08.jpeg',
+        src: './assets/images/armario/08.png',
+        src: './assets/images/armario/08_sem_fundo.png',
         alt: 'produto 8',
         category: 'armario',
         description: 'Descrição',
@@ -75,7 +81,8 @@ export const dataCards = [
     {
         id: 9,
         title: 'Produto 09',
-        src: './assets/images/armario/09.jpeg',
+        src: './assets/images/armario/09.png',
+        src: './assets/images/armario/09_sem_fundo.png',
         alt: 'produto 9',
         category: 'armario',
         description: 'Descrição',
@@ -84,7 +91,8 @@ export const dataCards = [
     {
         id: 10,
         title: 'Produto 10',
-        src: './assets/images/mesa/10.jpeg',
+        // src: './assets/images/mesa/10.jpeg',
+        src: './assets/images/mesa/10_sem_fundo.png',
         alt: 'produto 10',
         category: 'mesa',
         description: 'Descrição',
@@ -93,7 +101,8 @@ export const dataCards = [
     {
         id: 11,
         title: 'Produto 11',
-        src: './assets/images/cadeira/11.jpeg',
+        // src: './assets/images/cadeira/11.png',
+        src: './assets/images/cadeira/11_sem_fundo.png',
         alt: 'produto 11',
         category: 'cadeira',
         description: 'Descrição',
@@ -102,7 +111,8 @@ export const dataCards = [
     {
         id: 12,
         title: 'Produto 12',
-        src: './assets/images/mesa/12.jpeg',
+        // src: './assets/images/mesa/12.jpeg',
+        src: './assets/images/mesa/12_sem_fundo.png',
         alt: 'produto 12',
         category: 'mesa',
         description: 'Descrição',
@@ -111,7 +121,8 @@ export const dataCards = [
     {
         id: 13,
         title: 'Produto 13',
-        src: './assets/images/armario/13.jpeg',
+        // src: './assets/images/armario/13.png',
+        src: './assets/images/armario/13_sem_fundo.png',
         alt: 'produto 13',
         category: 'armario',
         description: 'Descrição',
@@ -120,7 +131,7 @@ export const dataCards = [
     {
         id: 14,
         title: 'Produto 14',
-        src: './assets/images/armario/14.jpeg',
+        src: './assets/images/armario/14_sem_fundo.png',
         alt: 'produto 14',
         category: 'armario',
         description: 'Descrição',
@@ -129,7 +140,7 @@ export const dataCards = [
     {
         id: 15,
         title: 'Produto 15',
-        src: './assets/images/armario/15.jpeg',
+        src: './assets/images/armario/15_sem_fundo.png',
         alt: 'produto 15',
         category: 'armario',
         description: 'Descrição',
@@ -138,7 +149,8 @@ export const dataCards = [
     {
         id: 16,
         title: 'Produto 16',
-        src: './assets/images/mesa/16.jpeg',
+        // src: './assets/images/mesa/16.jpeg',
+        src: './assets/images/mesa/16_sem_fundo.png',
         alt: 'produto 16',
         category: 'mesa',
         description: 'Descrição',
@@ -148,6 +160,7 @@ export const dataCards = [
         id: 17,
         title: 'Produto 17',
         src: './assets/images/mesa/17.jpeg',
+        src: './assets/images/mesa/17_sem_fundo.png',
         alt: 'produto 17',
         category: 'mesa',
         description: 'Descrição',
@@ -156,7 +169,8 @@ export const dataCards = [
     {
         id: 18,
         title: 'Produto 18',
-        src: './assets/images/mesa/18.jpeg',
+        // src: './assets/images/mesa/18.png',
+        src: './assets/images/mesa/18_sem_fundo.png',
         alt: 'produto 18',
         category: 'mesa',
         description: 'Descrição',
@@ -165,61 +179,64 @@ export const dataCards = [
     {
         id: 19,
         title: 'Produto 19',
-        src: './assets/images/mesa/19.jpeg',
+        // src: './assets/images/mesa/19.jpeg',
+        src: './assets/images/mesa/19_sem_fundo.png',
         alt: 'produto 19',
         category: 'mesa',
         description: 'Descrição',
         price: 99.00
     },
-    {
-        id: 20,
-        title: 'Produto 20',
-        src: './assets/images/banco/20.jpeg',
-        alt: 'produto 20',
-        category: 'banco',
-        description: 'Descrição',
-        price: 99.00
-    },
-    {
-        id: 21,
-        title: 'Produto 21',
-        src: './assets/images/banco/21.jpeg',
-        alt: 'produto 21',
-        category: 'banco',
-        description: 'Descrição',
-        price: 99.00
-    },
-    {
-        id: 22,
-        title: 'Produto 22',
-        src: './assets/images/mesa/22.jpeg',
-        alt: 'produto 22',
-        category: 'mesa',
-        description: 'Descrição',
-        price: 99.00
-    },
+    // {
+    //     id: 20,
+    //     title: 'Produto 20',
+    //     src: './assets/images/banco/20.jpeg',
+    //     alt: 'produto 20',
+    //     category: 'banco',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
+    // {
+    //     id: 21,
+    //     title: 'Produto 21',
+    //     src: './assets/images/banco/21.jpeg',
+    //     alt: 'produto 21',
+    //     category: 'banco',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
+    // {
+    //     id: 22,
+    //     title: 'Produto 22',
+    //     src: './assets/images/mesa/22.jpeg',
+    //     alt: 'produto 22',
+    //     category: 'mesa',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
     {
         id: 23,
         title: 'Produto 23',
-        src: './assets/images/mesa/23.jpeg',
+        // src: './assets/images/mesa/23.jpeg',
+        src: './assets/images/mesa/23_sem_fundo.png',
         alt: 'produto 23',
         category: 'mesa',
         description: 'Descrição',
         price: 99.00
     },
-    {
-        id: 24,
-        title: 'Produto 24',
-        src: './assets/images/banco/24.jpeg',
-        alt: 'produto 24',
-        category: 'banco',
-        description: 'Descrição',
-        price: 99.00
-    },
+    // {
+    //     id: 24,
+    //     title: 'Produto 24',
+    //     src: './assets/images/banco/24.jpeg',
+    //     alt: 'produto 24',
+    //     category: 'banco',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
     {
         id: 25,
         title: 'Produto 25',
-        src: './assets/images/mesa/25.jpeg',
+        // src: './assets/images/mesa/25.jpeg',
+        src: './assets/images/mesa/25_sem_fundo.png',
         alt: 'produto 25',
         category: 'mesa',
         description: 'Descrição',
@@ -228,7 +245,8 @@ export const dataCards = [
     {
         id: 26,
         title: 'Produto 26',
-        src: './assets/images/armario/26.jpeg',
+        // src: './assets/images/armario/26.jpeg',
+        src: './assets/images/armario/26_sem_fundo.png',
         alt: 'produto 26',
         category: 'armario',
         description: 'Descrição',
@@ -237,7 +255,8 @@ export const dataCards = [
     {
         id: 27,
         title: 'Produto 27',
-        src: './assets/images/armario/27.jpeg',
+        src: './assets/images/armario/27.png',
+        src: './assets/images/armario/27_sem_fundo.png',
         alt: 'produto 27',
         category: 'armario',
         description: 'Descrição',
@@ -247,6 +266,7 @@ export const dataCards = [
         id: 28,
         title: 'Produto 28',
         src: './assets/images/armario/28.jpeg',
+        src: './assets/images/armario/28_sem_fundo.png',
         alt: 'produto 28',
         category: 'armario',
         description: 'Descrição',
@@ -255,7 +275,8 @@ export const dataCards = [
     {
         id: 29,
         title: 'Produto 29',
-        src: './assets/images/mesa/29.jpeg',
+        // src: './assets/images/mesa/29.jpeg',
+        src: './assets/images/mesa/29_sem_fundo.png',
         alt: 'produto 29',
         category: 'mesa',
         description: 'Descrição',
@@ -264,7 +285,8 @@ export const dataCards = [
     {
         id: 30,
         title: 'Produto 30',
-        src: './assets/images/mesa/30.jpeg',
+        // src: './assets/images/mesa/30.jpeg',
+        src: './assets/images/mesa/30_sem_fundo.png',
         alt: 'produto 30',
         category: 'mesa',
         description: 'Descrição',
@@ -273,7 +295,8 @@ export const dataCards = [
     {
         id: 31,
         title: 'Produto 31',
-        src: './assets/images/armario/31.jpeg',
+        // src: './assets/images/armario/31.png',
+        src: './assets/images/armario/31_sem_fundo.png',
         alt: 'produto 31',
         category: 'armario',
         description: 'Descrição',
@@ -282,7 +305,8 @@ export const dataCards = [
     {
         id: 32,
         title: 'Produto 32',
-        src: './assets/images/cadeira/32.jpeg',
+        // src: './assets/images/cadeira/32.jpeg',
+        src: './assets/images/cadeira/32_sem_fundo.png',
         alt: 'produto 32',
         category: 'cadeira',
         description: 'Descrição',
@@ -291,7 +315,8 @@ export const dataCards = [
     {
         id: 33,
         title: 'Produto 33',
-        src: './assets/images/mesa/33.jpeg',
+        // src: './assets/images/mesa/33.jpeg',
+        src: './assets/images/mesa/33_sem_fundo.png',
         alt: 'produto 33',
         category: 'mesa',
         description: 'Descrição',
@@ -301,6 +326,7 @@ export const dataCards = [
         id: 34,
         title: 'Produto 34',
         src: './assets/images/armario/34.jpeg',
+        src: './assets/images/armario/34_sem_fundo.png',
         alt: 'produto 34',
         category: 'armario',
         description: 'Descrição',
@@ -309,7 +335,8 @@ export const dataCards = [
     {
         id: 35,
         title: 'Produto 35',
-        src: './assets/images/armario/35.jpeg',
+        // src: './assets/images/armario/35.jpeg',
+        src: './assets/images/armario/35_sem_fundo.png',
         alt: 'produto 35',
         category: 'armario',
         description: 'Descrição',
@@ -318,7 +345,8 @@ export const dataCards = [
     {
         id: 36,
         title: 'Produto 36',
-        src: './assets/images/mesa/36.jpeg',
+        // src: './assets/images/mesa/36.jpeg',
+        src: './assets/images/mesa/36_sem_fundo.png',
         alt: 'produto 36',
         category: 'mesa',
         description: 'Descrição',
@@ -369,15 +397,15 @@ export const dataCards = [
         description: 'Descrição',
         price: 99.00
     },
-    {
-        id: 42,
-        title: 'Produto 42',
-        src: './assets/images/armario/42.jpeg',
-        alt: 'produto 42',
-        category: 'armario',
-        description: 'Descrição',
-        price: 99.00
-    },
+    // {
+    //     id: 42,
+    //     title: 'Produto 42',
+    //     src: './assets/images/armario/42.jpeg',
+    //     alt: 'produto 42',
+    //     category: 'armario',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
     {
         id: 43,
         title: 'Produto 43',
@@ -432,15 +460,15 @@ export const dataCards = [
         description: 'Descrição',
         price: 99.00
     },
-    {
-        id: 49,
-        title: 'Produto 49',
-        src: './assets/images/armario/49.jpeg',
-        alt: 'produto 49',
-        category: 'armario',
-        description: 'Descrição',
-        price: 99.00
-    },
+    // {
+    //     id: 49,
+    //     title: 'Produto 49',
+    //     src: './assets/images/armario/49.jpeg',
+    //     alt: 'produto 49',
+    //     category: 'armario',
+    //     description: 'Descrição',
+    //     price: 99.00
+    // },
     {
         id: 50,
         title: 'Produto 50',
