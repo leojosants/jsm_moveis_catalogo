@@ -5,6 +5,7 @@ const inputSearch = document.querySelector('[data-input-search]');
 const select = document.querySelector('[data-select]');
 const popup = document.querySelector('[data-popup-container]');
 const buttonCloseDescription = document.querySelector('[data-button-close-description]');
+const filterContainer = document.querySelector('[data-filter]');
 
 const renderImages = () => {
     dataCardsDB.map(
@@ -133,6 +134,7 @@ select.addEventListener('change',
 buttonCloseDescription.addEventListener('click',
     () => {
         popup.style.display = 'none';
+        filterContainer.style.display = 'block';
     }
 );
 
@@ -143,6 +145,7 @@ window.addEventListener('click',
         if (!isButtonOpenDescription) return;
 
         popup.style.display = 'block';
+        filterContainer.style.display = 'none';
     }
 );
 
