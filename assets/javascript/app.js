@@ -5,6 +5,7 @@ const inputSearch = document.querySelector('[data-input-search]');
 const select = document.querySelector('[data-select]');
 const popup = document.querySelector('[data-popup-container]');
 const buttonCloseDescription = document.querySelector('[data-button-close-description]');
+const filterContainer = document.querySelector('[data-filter]');
 
 const renderImages = () => {
     dataCardsDB.map(
@@ -100,18 +101,6 @@ select.addEventListener('change',
                 );
                 break;
 
-            case 'mesa_category':
-                showCategory(allCards, 'mesa');
-                break;
-
-            case 'cadeira_category':
-                showCategory(allCards, 'cadeira');
-                break;
-
-            case 'cama_category':
-                showCategory(allCards, 'cama');
-                break;
-
             case 'armario_category':
                 showCategory(allCards, 'armario');
                 break;
@@ -120,8 +109,21 @@ select.addEventListener('change',
                 showCategory(allCards, 'banco');
                 break;
 
+
+            case 'cadeira_category':
+                showCategory(allCards, 'cadeira');
+                break;
+
             case 'conjunto_category':
                 showCategory(allCards, 'conjunto');
+                break;
+           
+            case 'mesa_category':
+                showCategory(allCards, 'mesa');
+                break;
+
+            case 'rack_category':
+                showCategory(allCards, 'rack');
                 break;
 
             default:
@@ -133,6 +135,7 @@ select.addEventListener('change',
 buttonCloseDescription.addEventListener('click',
     () => {
         popup.style.display = 'none';
+        filterContainer.style.display = 'block';
     }
 );
 
@@ -143,6 +146,7 @@ window.addEventListener('click',
         if (!isButtonOpenDescription) return;
 
         popup.style.display = 'block';
+        filterContainer.style.display = 'none';
     }
 );
 
