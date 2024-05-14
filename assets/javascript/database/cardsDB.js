@@ -35,8 +35,8 @@ export const dataCards = [
         price: 99.00,
         width: '200',
         height: '250',
-        top: '30px',
-        left: '55px'
+        top: '20px',
+        left: '57px'
     },
     {
         id: 4,
@@ -87,8 +87,8 @@ export const dataCards = [
         price: 99.00,
         width: '260',
         height: '250',
-        top: '17px',
-        left: '10px'
+        top: '25px',
+        left: '20px'
     },
     {
         id: 8,
@@ -113,7 +113,7 @@ export const dataCards = [
         price: 99.00,
         width: '250',
         height: '250',
-        top: '20px',
+        top: '30px',
         left: '25px'
     },
     {
