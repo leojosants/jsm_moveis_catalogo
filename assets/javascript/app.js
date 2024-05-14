@@ -19,7 +19,7 @@ const renderImages = () => {
             element_card.innerHTML = `
                 <div class="c-card">
                     <div class="c-card-image">
-                        <img src="${product.src}" alt="${product.alt}" />
+                        <img src="${product.src}" alt="${product.alt}" width="${product.width}" height="${product.height}" style="top:${product.top}; left: ${product.left}"/>
                     </div>
 
                     <h3>${product.title}</h3>
@@ -106,8 +106,8 @@ select.addEventListener('change',
                 showCategory(allCards, 'banco');
                 break;
 
-            case 'mesa_com_cadeira_category':
-                showCategory(allCards, 'mesa_com_cadeira');
+            case 'conjunto_category':
+                showCategory(allCards, 'conjunto');
                 break;
 
             default:
