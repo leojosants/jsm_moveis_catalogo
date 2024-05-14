@@ -47,6 +47,13 @@ const showCategory = (allCards, productCategory) => {
             }
         }
     );
+
+    window.scrollTo(
+        {
+            top: 0,
+            behavior: 'smooth',
+        }
+    );
 };
 
 inputSearch.addEventListener('input',
@@ -82,6 +89,13 @@ select.addEventListener('change',
                 allCards.forEach(
                     (data) => {
                         data.style.display = 'block';
+                    }
+                );
+
+                window.scrollTo(
+                    {
+                        top: 0,
+                        behavior: 'smooth',
                     }
                 );
                 break;

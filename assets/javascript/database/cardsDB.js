@@ -35,8 +35,8 @@ export const dataCards = [
         price: 99.00,
         width: '200',
         height: '250',
-        top: '30px',
-        left: '55px'
+        top: '20px',
+        left: '57px'
     },
     {
         id: 4,
@@ -87,8 +87,8 @@ export const dataCards = [
         price: 99.00,
         width: '260',
         height: '250',
-        top: '17px',
-        left: '10px'
+        top: '25px',
+        left: '20px'
     },
     {
         id: 8,
@@ -113,7 +113,7 @@ export const dataCards = [
         price: 99.00,
         width: '250',
         height: '250',
-        top: '20px',
+        top: '30px',
         left: '25px'
     },
     {
@@ -125,8 +125,138 @@ export const dataCards = [
         description: 'Descrição',
         price: 99.00,
         width: '250',
-        height: '250',
-        top: '20px',
+        height: '200',
+        top: '30px',
         left: '25px'
+    },
+    {
+        id: 11,
+        title: 'Produto 11',
+        src: './assets/images/mesa/11.png',
+        alt: 'Produto 11',
+        category: 'mesa',
+        description: 'Descrição',
+        price: 99.00,
+        width: '250',
+        height: '180',
+        top: '60px',
+        left: '25px'
+    },
+    {
+        id: 12,
+        title: 'Produto 12',
+        src: './assets/images/conjunto/12.png',
+        alt: 'Produto 12',
+        category: 'conjunto',
+        description: 'Descrição',
+        price: 99.00,
+        width: '250',
+        height: '240',
+        top: '30px',
+        left: '25px'
+    },
+    {
+        id: 13,
+        title: 'Produto 13',
+        src: './assets/images/banco/13.png',
+        alt: 'Produto 13',
+        category: 'banco',
+        description: 'Descrição',
+        price: 99.00,
+        width: '210',
+        height: '240',
+        top: '20px',
+        left: '55px'
+    },
+    {
+        id: 14,
+        title: 'Produto 14',
+        src: './assets/images/conjunto/14.png',
+        alt: 'Produto 14',
+        category: 'conjunto',
+        description: 'Descrição',
+        price: 99.00,
+        width: '390',
+        height: '240',
+        top: '30px',
+        left: '-55px'
+    },
+    {
+        id: 15,
+        title: 'Produto 15',
+        src: './assets/images/mesa/15.png',
+        alt: 'Produto 15',
+        category: 'mesa',
+        description: 'Descrição',
+        price: 99.00,
+        width: '190',
+        height: '240',
+        top: '30px',
+        left: '55px'
+    },
+    {
+        id: 16,
+        title: 'Produto 16',
+        src: './assets/images/mesa/16.png',
+        alt: 'Produto 16',
+        category: 'mesa',
+        description: 'Descrição',
+        price: 99.00,
+        width: '190',
+        height: '240',
+        top: '30px',
+        left: '55px'
+    },
+    {
+        id: 17,
+        title: 'Produto 17',
+        src: './assets/images/conjunto/17.png',
+        alt: 'Produto 17',
+        category: 'conjunto',
+        description: 'Descrição',
+        price: 99.00,
+        width: '270',
+        height: '240',
+        top: '30px',
+        left: '15px'
+    },
+    {
+        id: 18,
+        title: 'Produto 18',
+        src: './assets/images/armario/18.png',
+        alt: 'Produto 18',
+        category: 'armario',
+        description: 'Descrição',
+        price: 99.00,
+        width: '130',
+        height: '240',
+        top: '30px',
+        left: '75px'
+    },
+    {
+        id: 19,
+        title: 'Produto 19',
+        src: './assets/images/mesa/19.png',
+        alt: 'Produto 19',
+        category: 'mesa',
+        description: 'Descrição',
+        price: 99.00,
+        width: '230',
+        height: '240',
+        top: '30px',
+        left: '25px'
+    },
+    {
+        id: 20,
+        title: 'Produto 20',
+        src: './assets/images/armario/20.png',
+        alt: 'Produto 20',
+        category: 'armario',
+        description: 'Descrição',
+        price: 99.00,
+        width: '150',
+        height: '240',
+        top: '30px',
+        left: '75px'
     },
 ];
