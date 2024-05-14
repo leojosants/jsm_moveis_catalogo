@@ -101,18 +101,6 @@ select.addEventListener('change',
                 );
                 break;
 
-            case 'mesa_category':
-                showCategory(allCards, 'mesa');
-                break;
-
-            case 'cadeira_category':
-                showCategory(allCards, 'cadeira');
-                break;
-
-            case 'cama_category':
-                showCategory(allCards, 'cama');
-                break;
-
             case 'armario_category':
                 showCategory(allCards, 'armario');
                 break;
@@ -121,8 +109,21 @@ select.addEventListener('change',
                 showCategory(allCards, 'banco');
                 break;
 
+
+            case 'cadeira_category':
+                showCategory(allCards, 'cadeira');
+                break;
+
             case 'conjunto_category':
                 showCategory(allCards, 'conjunto');
+                break;
+           
+            case 'mesa_category':
+                showCategory(allCards, 'mesa');
+                break;
+
+            case 'rack_category':
+                showCategory(allCards, 'rack');
                 break;
 
             default:
