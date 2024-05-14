@@ -514,9 +514,9 @@ export const dataCards = [
         category: 'rack',
         description: 'Descrição',
         price: 99.00,
-        width: '230',
-        height: '110',
-        top: '90px',
+        width: '250',
+        height: '200',
+        top: '60px',
         left: '35px'
     },
 ];
