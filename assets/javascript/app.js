@@ -17,18 +17,18 @@ const renderImages = () => {
             element_card.setAttribute('data-id', product.id);
 
             element_card.innerHTML = `
-            <div>
-                <img class="c-post-img" src="${product.src}" alt="${product.alt}"/>
-            </div>
+                <div class="c-card">
+                    <div class="c-card-image">
+                        <img src="${product.src}" alt="${product.alt}" width="${product.width}" height="${product.height}" style="top:${product.top}; left: ${product.left}"/>
+                    </div>
 
-            <h3 style="margin-bottom: 1rem">${product.title}</h3>
-            
-            <span>ref: ${product.id}</span> 
+                    <h3>${product.title}</h3>
 
-            <div class="c-card-info">
-                <span>R$${product.price}</span>
-                <button data-button="open-description">${product.description}</button>
-            </div>
+                    <div class="c-card-info">
+                        <p>ref: <span>${product.id}</span></p>
+                        <button data-button="open-description">${product.description}</button>
+                    </div>
+                </div>
             `;
 
             containerAllCards.appendChild(element_card);
@@ -106,8 +106,8 @@ select.addEventListener('change',
                 showCategory(allCards, 'banco');
                 break;
 
-            case 'mesa_com_cadeira_category':
-                showCategory(allCards, 'mesa_com_cadeira');
+            case 'conjunto_category':
+                showCategory(allCards, 'conjunto');
                 break;
 
             default:
@@ -125,39 +125,10 @@ buttonCloseDescription.addEventListener('click',
 window.addEventListener('click',
     (event) => {
         const eventTarget = event.target;
-        const buttonOpenDescription = (eventTarget.dataset.button === 'open-description');
-        let parent = null;
+        const isButtonOpenDescription = (eventTarget.dataset.button === 'open-description');
+        if (!isButtonOpenDescription) return;
 
-        if (buttonOpenDescription) {
-            parent = eventTarget.parentElement.parentElement;
-            console.log(parent.dataset.id);
-        }
-
-        //     if (eventTarget.dataset.button === 'open-description') {
-        //         popup.style.display = 'block';
-        //         let ref = document.querySelector('[data-ref]');
-        //         let price = document.querySelector('[data-price]').innerText;
-        //         let width = document.querySelector('[data-width]').innerText;
-        //         let height = document.querySelector('[data-height]').innerText;
-        //         const cards = document.querySelectorAll('[data-cards');
-        //         let index = null;
-
-        //         cards.forEach(
-        //             (card, indice) => {
-        //                 index = indice + 1;
-
-        //                 dataCardsDB.forEach(
-        //                     (data) => {
-        //                         if (data.id === index) {
-        //                             ref.innerText = data.id;
-        //                        }
-        //                     }
-        //                 );
-        //             }
-        //         );
-
-        //         // console.log(index)
-        //     }
+        popup.style.display = 'block';
     }
 );
 
