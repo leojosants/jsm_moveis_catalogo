@@ -161,6 +161,7 @@ input[type="search"]::-webkit-search-cancel-button {
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.752);
     display: none;
+    z-index: 100;
 }
 
 .c-popup-content {
@@ -171,7 +172,6 @@ input[type="search"]::-webkit-search-cancel-button {
     background-color: #ffffff;
     padding: 1rem;
     border-radius: 5px;
-    /* width: 300px; */
     width: 23rem;
     font-size: 0.9rem;
 }
