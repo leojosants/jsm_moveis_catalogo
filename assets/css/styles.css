@@ -28,12 +28,19 @@
     border-bottom: 1px solid rgba(19, 18, 18, 0.091);
     box-shadow: 5px 10px 18px #8888880b;
     padding-bottom: 0.5rem;
+
+
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .c-main-container h1 {
     text-align: center;
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 1rem;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
 }
 
 .c-main-container .c-search {
@@ -43,6 +50,7 @@
     align-items: center;
     justify-content: space-around;
     padding: 0.5rem 0;
+    gap: 1rem;
 }
 
 .c-main-container .c-search label {
@@ -86,7 +94,7 @@ input[type="search"]::-webkit-search-cancel-button {
     gap: 1rem;
     max-width: 90%;
     margin: 0 auto;
-    margin-top: 12rem;
+    margin-top: 7rem;
 }
 
 .c-main-card .c-card {
