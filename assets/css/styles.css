@@ -7,6 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
+    background-color: #dddddd08;
 }
 
 .c-main-container {
