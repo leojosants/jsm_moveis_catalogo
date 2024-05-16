@@ -38,16 +38,27 @@ const renderImages = () => {
 };
 
 const showCategory = (allCards, productCategory) => {
-    allCards.forEach(
-        (data) => {
-            if (data.dataset.category === `${productCategory}`) {
+
+    if (productCategory ==='all_categories') {
+        allCards.forEach(
+            (data) => {
                 data.style.display = 'block';
             }
-            else {
-                data.style.display = 'none';
+        );
+
+    }
+    else {   
+        allCards.forEach(
+            (data) => {
+                if (data.dataset.category === `${productCategory}`) {
+                    data.style.display = 'block';
+                }
+                else {
+                    data.style.display = 'none';
+                }
             }
-        }
-    );
+        );
+    }
 
     window.scrollTo(
         {
@@ -59,6 +70,7 @@ const showCategory = (allCards, productCategory) => {
 
 inputSearch.addEventListener('input',
     (event) => {
+        select.value='Categorias';
         const eventTarget = event.target;
         const inputValue = eventTarget.value.toLocaleLowerCase();
         const allCards = document.querySelectorAll('[data-cards]');
@@ -87,18 +99,7 @@ select.addEventListener('change',
 
         switch (filteredCategory) {
             case 'all_categories':
-                allCards.forEach(
-                    (data) => {
-                        data.style.display = 'block';
-                    }
-                );
-
-                window.scrollTo(
-                    {
-                        top: 0,
-                        behavior: 'smooth',
-                    }
-                );
+                showCategory(allCards, 'all_categories');
                 break;
 
             case 'armario_category':
