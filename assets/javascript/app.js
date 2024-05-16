@@ -39,7 +39,7 @@ const renderImages = () => {
 
 const showCategory = (allCards, productCategory) => {
 
-    if (productCategory ==='all_categories') {
+    if (productCategory === 'all_categories') {
         allCards.forEach(
             (data) => {
                 data.style.display = 'block';
@@ -47,7 +47,7 @@ const showCategory = (allCards, productCategory) => {
         );
 
     }
-    else {   
+    else {
         allCards.forEach(
             (data) => {
                 if (data.dataset.category === `${productCategory}`) {
@@ -70,7 +70,7 @@ const showCategory = (allCards, productCategory) => {
 
 inputSearch.addEventListener('input',
     (event) => {
-        select.value='Categorias';
+        select.value = 'Categorias';
         const eventTarget = event.target;
         const inputValue = eventTarget.value.toLocaleLowerCase();
         const allCards = document.querySelectorAll('[data-cards]');
@@ -118,7 +118,7 @@ select.addEventListener('change',
             case 'conjunto_category':
                 showCategory(allCards, 'conjunto');
                 break;
-           
+
             case 'mesa_category':
                 showCategory(allCards, 'mesa');
                 break;
@@ -136,7 +136,6 @@ select.addEventListener('change',
 buttonCloseDescription.addEventListener('click',
     () => {
         popup.style.display = 'none';
-        filterContainer.style.display = 'block';
     }
 );
 
@@ -147,7 +146,6 @@ window.addEventListener('click',
         if (!isButtonOpenDescription) return;
 
         popup.style.display = 'block';
-        filterContainer.style.display = 'none';
     }
 );
 
