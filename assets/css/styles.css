@@ -10,6 +10,10 @@
     background-color: #dddddd08;
 }
 
+body {
+    background-color: #3d3d3d00;
+}
+
 .c-main-container {
     overflow: hidden;
     margin: 1rem auto;
