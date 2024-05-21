@@ -1,3 +1,7 @@
+const random = () => {
+    return Math.floor(Math.random() * 100);
+};
+
 export const dataCards = [
     {
         id: 1,
