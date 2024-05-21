@@ -4,8 +4,6 @@ const containerAllCards = document.querySelector('[data-container-all-cards]');
 const inputSearch = document.querySelector('[data-input-search]');
 const select = document.querySelector('[data-select]');
 const popup = document.querySelector('[data-popup-container]');
-const buttonCloseDescription = document.querySelector('[data-button-close-description]');
-const filterContainer = document.querySelector('[data-filter]');
 
 const renderImages = () => {
     dataCardsDB.map(
@@ -20,14 +18,28 @@ const renderImages = () => {
             element_card.innerHTML = `
                 <div class="c-card">
                     <div class="c-card-image">
-                        <img src="${product.src}" alt="${product.alt}" width="${product.width}" height="${product.height}" style="top:${product.top}; left: ${product.left}"/>
+                        <img
+                            src="${product.src}" 
+                            alt="${product.alt}" 
+                            width="${product.width}" 
+                            height="${product.height}" 
+                            style="top:${product.top}; 
+                            left: ${product.left}"
+                        />
                     </div>
 
-                    <h3>${product.title}</h3>
+                    <h3>
+                        ${product.title}
+                    </h3>
 
                     <div class="c-card-info">
-                        <p>ref: <span>${product.id}</span></p>
-                        <button data-button="open-description">${product.description}</button>
+                        <p>
+                            ref: <span>${product.id}</span>
+                        </p>
+                        
+                        <button data-button="open-description">
+                            ${product.description}
+                        </button>
                     </div>
                 </div>
             `;
@@ -38,7 +50,6 @@ const renderImages = () => {
 };
 
 const showCategory = (allCards, productCategory) => {
-
     if (productCategory === 'all_categories') {
         allCards.forEach(
             (data) => {
@@ -133,19 +144,60 @@ select.addEventListener('change',
     }
 );
 
-buttonCloseDescription.addEventListener('click',
-    () => {
-        popup.style.display = 'none';
-    }
-);
-
 window.addEventListener('click',
     (event) => {
         const eventTarget = event.target;
+        const isButtonCloseDescription=(eventTarget.dataset.button === 'close-description');
         const isButtonOpenDescription = (eventTarget.dataset.button === 'open-description');
-        if (!isButtonOpenDescription) return;
+        const productId = Number(eventTarget.parentElement.parentElement.parentElement.dataset.id);
+        
+        if (isButtonOpenDescription) {
+            popup.style.display = 'block';
 
-        popup.style.display = 'block';
+            dataCardsDB.forEach(
+                (data) => {
+                    if (data.id === productId) {
+                        popup.innerHTML = `
+                            <div class="c-popup-content">
+                                <h2>
+                                    Descrição
+                                </h2>
+
+                                <p style="font-weight: 500">
+                                    Nome: <span>${data.title}</span>
+                                </p>
+                                
+                                <p style="font-weight: 500">
+                                    Ref: <span data-ref>${data.id}</span>
+                                </p>
+                                
+                                <p style="font-weight: 500">
+                                    Preço: R$<span data-price>${data.price.toFixed(2)}</span>
+                                </p>
+                                
+                                <p style="font-weight: 500">
+                                    Largura: <span data-width>0</span>cm²
+                                </p>
+                                
+                                <p style="font-weight: 500">
+                                    Altura: <span data-height>0</span>cm²
+                                </p>
+
+                                <div class="c-popup-button">
+                                    <button data-button="close-description">
+                                        Fechar
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+            );
+        }
+
+        if (isButtonCloseDescription) {
+            popup.style.display = 'none';
+        }
     }
 );
 
